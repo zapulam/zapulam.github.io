@@ -1,9 +1,9 @@
-## LX GALLERY
+## ZacharyAaronFotos
 
 
 ### <div align="center">
 
-|[VISIT OUR GALLERY HERE 💕](https://zapulam.github.io) </div>
+|[VISIT MY GALLERY HERE](https://zapulam.github.io) </div>
 |---
 
 ### Repo Status 
