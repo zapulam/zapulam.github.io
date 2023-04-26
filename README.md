@@ -1,7 +1,6 @@
-## ZacharyAaronFotos
+# ZacharyAaronFotos
 
-
-### <div align="center">
+## <div align="center">
 
 |[VISIT MY GALLERY HERE](https://zapulam.github.io) </div>
 |---
