@@ -1089,6 +1089,7 @@ input:required {
 @media only screen and (max-width: 767px) {
   .single-welcome-slide .welcome-text h2 {
     font-size: 42px;
+    text-align: left;
   }
 }
 
