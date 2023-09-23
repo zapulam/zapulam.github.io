@@ -1,3 +1,3 @@
-# ZacharyAaronFotos
+# ZacharyAaronFotos - Photography Gallery
 
-[VISIT MY GALLERY HERE](https://zapulam.github.io) 📷😄
+Click [here](https://zapulam.github.io) to visit my gallery website 📷😄
