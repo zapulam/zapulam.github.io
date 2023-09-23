@@ -314,11 +314,9 @@
 
           </div>
 
-          <hr>
           <div class="containerDown">
               <div class="last">
-                  <div class="head" style="color: #636363;">Total Website Visits</div>
-                  <div class="count" style="color: #636363;">00</div>
+                <div class="head" style="color: #636363;">Total Website Visits: <span id="visit-count">0</span></div>
               </div>
               <p>Made by <a
                       href="https://github.com/zapulam" target="_blank"> Zachary 😄</a></p>
@@ -329,13 +327,25 @@
 </body>
 
 <script>
-  function updateCounter() {
-      fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
-          .then(res => res.json())
-          .then(data => counterElement.innerHTML = data.value)
+  // Function to read or initialize the visit count from cookies or local storage
+  function getVisitCount() {
+      let visitCount = localStorage.getItem('visitCount');
+      if (!visitCount) {
+          visitCount = 0;
+      }
+      return parseInt(visitCount);
   }
-  updateCounter()
-  counterElement = document.getElementsByClassName('count')[0];
+
+  // Function to update and display the visit count
+  function updateVisitCount() {
+      const visitCountElement = document.getElementById('visit-count');
+      const currentCount = getVisitCount() + 1;
+      localStorage.setItem('visitCount', currentCount);
+      visitCountElement.textContent = currentCount;
+  }
+
+  // Call the updateVisitCount function to increment the visit count
+  updateVisitCount();
 </script>
 
 
