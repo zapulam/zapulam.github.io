@@ -189,9 +189,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/41.jpg" alt="">
+                        <img src="img/bg-img/17.jpg" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/41.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg-img/17.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -199,9 +199,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video cars mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/71.jpg" alt="">
+                        <img src="img/bg-img/72.jpg" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/71.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg-img/72.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -219,9 +219,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
                     data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/85.jpg" alt="">
+                        <img src="img/bg-img/26.jpg" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/85.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg-img/26.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -259,9 +259,9 @@
             <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
                 data-wow-delay="500ms">
                 <div class="single-portfolio-content">
-                    <img src="img/bg-img/17.jpg" alt="">
+                    <img src="img/bg-img/41.jpg" alt="">
                     <div class="hover-content">
-                        <a href="img/bg-img/17.jpg" class="portfolio-img">+</a>
+                        <a href="img/bg-img/41.jpg" class="portfolio-img">+</a>
                     </div>
                 </div>
             </div>
@@ -311,7 +311,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="img/bg-img/63.jpg" alt="">
+                <img src="img/bg-img/61.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="#" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -322,7 +322,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="img/bg-img/61.jpg" alt="">
+                <img src="img/bg-img/63.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="#" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -372,9 +372,11 @@
 
             </div>
 
+            <hr>
             <div class="containerDown">
                 <div class="last">
-                    <div class="head" style="color: #636363;">Total Website Visits: <span id="visit-count">0</span></div>
+                    <div class="head" style="color: #636363;">Total Website Visits</div>
+                    <div class="count" style="color: #636363;">00</div>
                 </div>
                 <p>Made by <a
                         href="https://github.com/zapulam" target="_blank"> Zachary 😄</a></p>
@@ -385,25 +387,13 @@
 </body>
 
 <script>
-    // Function to read or initialize the visit count from cookies or local storage
-    function getVisitCount() {
-        let visitCount = localStorage.getItem('visitCount');
-        if (!visitCount) {
-            visitCount = 0;
-        }
-        return parseInt(visitCount);
+    function updateCounter() {
+        fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
+            .then(res => res.json())
+            .then(data => counterElement.innerHTML = data.value)
     }
-
-    // Function to update and display the visit count
-    function updateVisitCount() {
-        const visitCountElement = document.getElementById('visit-count');
-        const currentCount = getVisitCount() + 1;
-        localStorage.setItem('visitCount', currentCount);
-        visitCountElement.textContent = currentCount;
-    }
-
-    // Call the updateVisitCount function to increment the visit count
-    updateVisitCount();
+    updateCounter()
+    counterElement = document.getElementsByClassName('count')[0];
 </script>
 
 
