@@ -318,8 +318,7 @@
               <div class="last">
                 <div class="head" style="color: #636363;">Total Website Visits: <span id="visit-count">0</span></div>
               </div>
-              <p>Made by <a
-                      href="https://github.com/zapulam" target="_blank"> Zachary 😄</a></p>
+              <p>Made by <a href="https://github.com/zapulam" target="_blank"> Zachary 😄</a></p>
           </div>
       </div>
       </div>
@@ -327,44 +326,30 @@
 </body>
 
 <script>
-  // Function to read or initialize the visit count from cookies or local storage
-  function getVisitCount() {
-      let visitCount = localStorage.getItem('visitCount');
-      if (!visitCount) {
-          visitCount = 0;
-      }
-      return parseInt(visitCount);
+  function updateCounter() {
+      fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
+          .then(res => res.json())
+          .then(data => counterElement.innerHTML = data.value)
   }
-
-  // Function to update and display the visit count
-  function updateVisitCount() {
-      const visitCountElement = document.getElementById('visit-count');
-      const currentCount = getVisitCount() + 1;
-      localStorage.setItem('visitCount', currentCount);
-      visitCountElement.textContent = currentCount;
-  }
-
-  // Call the updateVisitCount function to increment the visit count
-  updateVisitCount();
+  updateCounter()
+  counterElement = document.getElementsByClassName('count')[0];
 </script>
 
 
 <script src="js/jquery.min.js"></script>
 
 <script src="js/popper.min.js%2bbootstrap.min.js.pagespeed.jc.9S4FA15Zn6.js"></script>
-<script>
-  eval(mod_pagespeed_2mSwO3vn68);
-</script>
 
-<script>
-  eval(mod_pagespeed_aQrG1NKKxL);
-</script>
+<script>eval(mod_pagespeed_2mSwO3vn68);</script>
 
-<script src="js/lx.bundle.js"></script>
+<script>eval(mod_pagespeed_aQrG1NKKxL);</script>
+
+<script src="js/bundle.js"></script>
 
 <script src="js/default-assets/active.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -375,15 +360,12 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
+
 <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
   data-cf-beacon='{"rayId":"699023133d611baa","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.9.0","si":100}'></script>
-<!-- animate on scroll js  -->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-</body>
 
-
+<script>AOS.init();</script>
 
 </html>
