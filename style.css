@@ -10,8 +10,6 @@ Last Update: Feb 22, 2019
 
 [Tables of CSS Content]
 
-+ body
-
     - 01.0 Reboot CSS
     - 02.0 Spacing CSS
     - 03.0 Preloader CSS
@@ -23,9 +21,11 @@ Last Update: Feb 22, 2019
     - 09.0 Follow CSS
     - 10.0 About CSS
     - 11.0 Breadcrumb CSS
-    - 13.0 Team CSS
+    - 13.0 About CSS
     - 14.0 Gallery CSS
     - 15.0 Contact CSS
+    - 16.0 Trips CSS
+    - 17.0 Body CSS
 
 --------------------------------------------- */
 
@@ -42,6 +42,8 @@ Last Update: Feb 22, 2019
 @import url(css/font-awesome.min.css);
 @import url(css/default-assets/themify-icons.css);
 @import url(css/style.css);
+
+
 /* :: 01.0 Reboot CSS */
 
 * {
@@ -89,7 +91,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  color: #252525;
+  color: white;
   line-height: 1.3;
   font-weight: 600;
 }
@@ -114,7 +116,7 @@ h6 {
 }
 
 #social-sidebar a {
-  background: rgba(31, 30, 30, 0.7);
+  background: rgba(110, 150, 225, 0.8);
   color: #fff;
   text-decoration: none;
   display: block;
@@ -156,24 +158,6 @@ h6 {
   position: absolute;
   top: 50%;
   transform: rotate(45deg);
-}
-
-#social-sidebar a[class*="twitter"]:hover,
-#social-sidebar a[class*="twitter"] span,
-#social-sidebar a[class*="twitter"] span:before {
-  background: #00aced;
-}
-
-#social-sidebar a[class*="facebook"]:hover,
-#social-sidebar a[class*="facebook"] span,
-#social-sidebar a[class*="facebook"] span:before {
-  background: #3b5998;
-}
-
-#social-sidebar a[class*="gplus"]:hover,
-#social-sidebar a[class*="gplus"] span,
-#social-sidebar a[class*="gplus"] span:before {
-  background: #e34429;
 }
 
 #social-sidebar a[class*="instagrem"]:hover,
@@ -281,7 +265,7 @@ ul li {
   width: 100%;
   top: 20px;
   width: 30px;
-  background: #fc6060;
+  background: white;
   height: 30px;
   line-height: 30px;
 }
@@ -293,7 +277,7 @@ img.mfp-img {
 
 button.mfp-close,
 button.mfp-arrow {
-  background: #fc6060;
+  background: white;
 }
 
 .mfp-bottom-bar {
@@ -521,7 +505,7 @@ input:required {
 
 .loader {
   margin-top: -20px;
-  color: #fc6060;
+  color: white;
   font-size: 6px;
   position: relative;
   -webkit-transform: translateZ(0);
@@ -611,8 +595,8 @@ input:required {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: #fc6060;
-  color: #ffffff;
+  background-color: white;
+  color: black;
   text-align: center;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -632,8 +616,8 @@ input:required {
 
 #scrollUp:focus,
 #scrollUp:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: rgb(110, 150, 225);
+  color: black;
 }
 
 /* :: 6.0 Buttons CSS */
@@ -643,7 +627,7 @@ input:required {
 }
 
 .lx-btn {
-  position: relative;
+  position: center;
   z-index: 1;
   min-width: 160px;
   height: 46px;
@@ -655,8 +639,8 @@ input:required {
   text-align: center;
   text-transform: capitalize;
   background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #fc6060;
+  color: white;
+  border: 2px solid white;
   border-radius: 60px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -664,7 +648,7 @@ input:required {
 }
 
 .lx-btn.btn-2 {
-  color: #252525;
+  color: white;
 }
 
 .lx-btn:focus,
@@ -672,15 +656,16 @@ input:required {
   font-weight: 500;
   -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-  background-color: #fc6060;
-  color: #ffffff;
+  background-color: rgb(110, 150, 225);
+  border: 2px solid rgb(110, 150, 225);
+  color: white;
 }
 
 .badges-btn {
   background-color: #ebebeb;
   padding: 5px 15px;
   display: inline-block;
-  color: #636363;
+  color: white;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -693,15 +678,15 @@ input:required {
 
 .badges-btn:hover,
 .badges-btn:focus {
-  background-color: #fc6060;
-  color: #ffffff;
+  background-color: rgb(110, 150, 225);
+  color: white;
   font-weight: 500;
 }
 
 /* :: 7.0 Header CSS */
 
 .home-logo {
-  color: #eaeaea;
+  color: white;
 }
 
 .header-area {
@@ -728,7 +713,7 @@ input:required {
 }
 .header-area .search-icon i:hover {
   transition: 0.5s;
-  color: #fc6060;
+  color: white;
 }
 
 .top-search-area .modal {
@@ -784,7 +769,7 @@ input:required {
   z-index: 10;
   border-radius: 0 6px 6px 0;
   border: none;
-  background-color: #fc6060;
+  background-color: white;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -816,14 +801,14 @@ input:required {
 .classy-nav-container .classy-navbar .classynav ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
   padding: 0 20px;
 }
 
 .classy-nav-container .classy-navbar .classynav ul li a:hover,
 .classy-nav-container .classy-navbar .classynav ul li a:focus {
-  color: #fc6060;
+  color: rgb(110, 150, 225);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -835,22 +820,22 @@ input:required {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    color: #252525;
+    color: gray;
   }
   .classy-nav-container .classy-navbar .classynav ul li a:hover,
   .classy-nav-container .classy-navbar .classynav ul li a:focus {
-    color: #fc6060;
+    color: rgb(110, 150, 225);
   }
 }
 
 @media only screen and (max-width: 767px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    color: #252525;
+    color: gray;
   }
   .classy-nav-container .classy-navbar .classynav ul li a:hover,
   .classy-nav-container .classy-navbar .classynav ul li a:focus {
-    color: #fc6060;
+    color: white;
   }
 }
 
@@ -861,7 +846,7 @@ input:required {
   height: 42px;
   line-height: 42px;
   padding: 0 30px;
-  color: #252525;
+  color: gray;
 }
 
 .classy-nav-container
@@ -896,7 +881,7 @@ input:required {
   ul
   li
   a:hover {
-  color: #fc6060;
+  color: white;
 }
 
 .classynav ul li.active a {
@@ -907,7 +892,7 @@ input:required {
 .classynav ul li.active a::before {
   width: calc(100% - 40px);
   height: 2px;
-  background-color: #fc6060;
+  background-color: rgb(110, 150, 225);
   position: absolute;
   bottom: 7px;
   left: 0;
@@ -932,7 +917,7 @@ input:required {
 .classynav ul li.has-down > a::after,
 .classynav ul li.has-down.active > a::after,
 .classynav ul li.megamenu-item > a::after {
-  color: #fc6060;
+  color: white;
 }
 
 .breakpoint-off .classynav ul li .dropdown,
@@ -948,7 +933,7 @@ input:required {
 }
 
 .classy-navbar-toggler .navbarToggler span {
-  background-color: #252525;
+  background-color: gray;
 }
 
 .main-header-area {
@@ -963,7 +948,7 @@ input:required {
 }
 
 .main-header-area.sticky {
-  background-color: #000000;
+  background-color: rgba(25, 25, 30, 1);
 }
 
 .classy-navbar-toggler .navbarToggler span {
@@ -1007,7 +992,7 @@ input:required {
 .welcome-slides .owl-prev:focus,
 .welcome-slides .owl-next:hover,
 .welcome-slides .owl-next:focus {
-  background-color: #fc6060;
+  background-color: white;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1050,7 +1035,7 @@ input:required {
   z-index: 2;
   width: 100%;
   height: 880px;
-  background-color: #fc6060;
+  background-color: white;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1081,7 +1066,7 @@ input:required {
   font-size: 82px;
   display: block;
   margin-bottom: 0;
-  background: -webkit-linear-gradient(#ff9696, #ffe89e);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(110, 150, 225, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1107,7 +1092,7 @@ input:required {
 
 .single-welcome-slide .welcome-text .hero-mail-contact:hover,
 .single-welcome-slide .welcome-text .hero-mail-contact:focus {
-  color: #fc6060;
+  color: white;
 }
 
 /* :: 9.0 Follow CSS */
@@ -1136,7 +1121,7 @@ input:required {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(252, 96, 96, 0.9);
+  background-color: rgba(110, 150, 225, 0.8);
   opacity: 0;
   visibility: hidden;
   -webkit-transition-duration: 500ms;
@@ -1212,7 +1197,7 @@ input:required {
 .about-us-content .line {
   height: 3px;
   width: 70px;
-  background-color: #fc6060;
+  background-color: white;
   margin-bottom: 30px;
 }
 
@@ -1241,7 +1226,7 @@ input:required {
   height: 50px;
   width: 50px;
   display: inline-block;
-  background-color: #fc6060;
+  background-color: white;
   text-align: center;
   line-height: 56px;
   font-size: 38px;
@@ -1260,7 +1245,7 @@ input:required {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 2px solid #fc6060;
+  border: 2px solid white;
   -webkit-animation: video-icon 1200ms linear infinite;
   animation: video-icon 1200ms linear infinite;
   z-index: -10;
@@ -1331,7 +1316,7 @@ input:required {
   transition-duration: 800ms;
   height: 76px;
   width: 76px;
-  background-color: #fc6060;
+  background-color: white;
   display: inline-block;
   text-align: center;
   line-height: 76px;
@@ -1363,13 +1348,13 @@ input:required {
 
 .why-choose-us-content:hover,
 .why-choose-us-content:focus {
-  background-color: #fc6060;
+  background-color: white;
 }
 
 .why-choose-us-content:hover .chosse-us-icon,
 .why-choose-us-content:focus .chosse-us-icon {
   background-color: #fff;
-  color: #fc6060;
+  color: white;
   box-shadow: 0 5px 15px 2px rgba(255, 255, 255, 0.15);
 }
 
@@ -1418,7 +1403,7 @@ input:required {
 }
 
 .breadcrumb-content .breadcrumb .breadcrumb-item {
-  color: #fc6060;
+  color: white;
   font-weight: 400;
   font-size: 16px;
 }
@@ -1431,7 +1416,7 @@ input:required {
 
 .breadcrumb-content .breadcrumb .breadcrumb-item a:hover,
 .breadcrumb-content .breadcrumb .breadcrumb-item a:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .breadcrumb-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
@@ -1450,7 +1435,7 @@ input:required {
   font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #fc6060;
+  background-color: white;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -1508,7 +1493,7 @@ input:required {
 
 .breadcrumb-area.blog .breadcrumb-content .post-meta a:hover,
 .breadcrumb-area.blog .breadcrumb-content .post-meta a:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .breadcrumb-area.blog .breadcrumb-content .post-meta a:hover::after,
@@ -1543,7 +1528,7 @@ input:required {
   z-index: 1;
   margin-bottom: 30px;
   margin-top: 30px;
-  border-left: 3px solid #fc6060;
+  border-left: 3px solid white;
   padding-left: 30px;
 }
 
@@ -1563,7 +1548,7 @@ input:required {
 
 .lx-blockquote h6 {
   font-size: 18px;
-  color: #fc6060;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -1616,7 +1601,7 @@ input:required {
 .post-author-area .post-social-info p {
   margin-bottom: 0;
   margin-right: 20px;
-  color: #252525;
+  color: gray;
 }
 
 .post-author-area .post-social-info a {
@@ -1632,7 +1617,7 @@ input:required {
 
 .post-author-area .post-social-info a:hover,
 .post-author-area .post-social-info a:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .lx-pager-area {
@@ -1701,7 +1686,7 @@ input:required {
 .lx-pager-area .previous .overlay-content .post-title:focus,
 .lx-pager-area .next .overlay-content .post-title:hover,
 .lx-pager-area .next .overlay-content .post-title:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .lx-pager-area .previous .overlay-content .previous-link,
@@ -1732,7 +1717,7 @@ input:required {
 .lx-pager-area .next .overlay-content .previous-link:focus,
 .lx-pager-area .next .overlay-content .next-link:hover,
 .lx-pager-area .next .overlay-content .next-link:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .lx-pager-area .previous:hover::after,
@@ -1777,7 +1762,7 @@ input:required {
 
 .pagination .page-link {
   padding: 12px 15px;
-  color: #252525;
+  color: gray;
   border: none;
   background-color: #f7f7f7;
   margin-right: 5px;
@@ -1786,9 +1771,9 @@ input:required {
 
 .pagination .page-link:hover,
 .pagination .page-link:focus {
-  background-color: #fc6060;
+  background-color: white;
   color: #ffffff;
-  border-color: #fc6060;
+  border-color: white;
 }
 
 .pagination .page-link:focus {
@@ -1871,7 +1856,7 @@ input:required {
 
 .comment_area .comment-content .comment-meta .post-date:hover,
 .comment_area .comment-content .comment-meta .post-date:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .comment_area .comment-content .comment-meta h5 {
@@ -1911,8 +1896,8 @@ input:required {
 .comment_area .comment-content .comment-meta .like:hover,
 .comment_area .comment-content .comment-meta .reply:focus,
 .comment_area .comment-content .comment-meta .reply:hover {
-  border-color: #fc6060;
-  background-color: #fc6060;
+  border-color: white;
+  background-color: white;
   color: #ffffff;
 }
 
@@ -1994,7 +1979,7 @@ input:required {
   font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #fc6060;
+  background-color: white;
   top: 15px;
   right: 15px;
   z-index: 20;
@@ -2040,7 +2025,7 @@ input:required {
 
 .single-post-area .post-content .post-meta a:hover,
 .single-post-area .post-content .post-meta a:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .single-post-area .post-content .post-meta a:hover::after,
@@ -2062,7 +2047,7 @@ input:required {
 
 .single-post-area .post-content .post-title:hover,
 .single-post-area .post-content .post-title:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .single-post-area:hover .post-thumbnail img,
@@ -2087,7 +2072,7 @@ input:required {
   padding-left: 5px;
 }
 
-/* :: 13.0 Team CSS */
+/* :: 13.0 About CSS */
 
 .team-content-area {
   position: relative;
@@ -2129,7 +2114,7 @@ input:required {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  color: #fc6060;
+  color: white;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -2151,12 +2136,12 @@ input:required {
 
 .team-content-area .member-social-info a:hover,
 .team-content-area .member-social-info a:focus {
-  color: #fc6060;
+  color: white;
 }
 
 .team-content-area:hover,
 .team-content-area:focus {
-  background-color: #fc6060;
+  background-color: white;
 }
 
 .team-content-area:hover .member-thumb img,
@@ -2229,6 +2214,7 @@ input:required {
   z-index: 1;
   padding: 0;
   border: 0;
+  color: white;
   background-color: transparent;
   font-size: 20px;
   font-weight: 600;
@@ -2253,7 +2239,7 @@ input:required {
   position: absolute;
   width: 0%;
   height: 3px;
-  background-color: #fc6060;
+  background-color: rgb(110, 150, 225);
   content: "";
   bottom: -5px;
   left: 0;
@@ -2308,16 +2294,16 @@ input:required {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: #fc6060;
+  background-color: white;
   text-align: center;
   line-height: 52px;
   font-size: 30px;
-  color: #ffffff;
+  color: black;
 }
 
 .single-portfolio-content .hover-content a:hover,
 .single-portfolio-content .hover-content a:focus {
-  background-color: #000000;
+  background-color: rgb(110, 150, 225);
 }
 
 .single-portfolio-content:hover img,
@@ -2355,7 +2341,7 @@ input:required {
 
 .lx-contact-form .form-control:focus {
   box-shadow: none;
-  border-color: #fc6060;
+  border-color: white;
 }
 
 .lx-contact-form textarea.form-control {
@@ -2407,7 +2393,7 @@ input:required {
 }
 
 footer {
-  background-color: #161715;
+  background-color: rgba(25, 25, 30, 1);
   height: vh;
 }
 
@@ -2485,10 +2471,6 @@ footer {
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
-  
-/*  border: 0.5px white solid;
-  border-radius: 8px;
-  */
   padding: 10px;
   flex-direction: column;
 }
@@ -2571,104 +2553,20 @@ footer {
   color: #afb4bf;
 }
 
-/*Pricing Section CSS*/
-
-.pricing {
-  padding: 5em 0;
+/* :: 16.0 Trips CSS */
+#trips-content {
+  border: 1px solid red;
+  height: 1em;
+  padding: 2px; /* adjust to taste */
+  overflow: hidden    
 }
 
-.pricing h2 {
-  text-align: center;
-}
-
-.pricing .container {
-  position: relative;
-  width: 1150px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.pricing .container .card {
-  position: relative;
-  width: 300px;
-  height: 420px;
-  background: #fff;
-  margin: 20px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
-}
-
-.pricing .container .card:hover {
-  transform: scale(1.1);
-}
-
-.pricing .container .card .circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  clip-path: circle(180px at center 0);
-  text-align: center;
-}
-
-.pricing .container .card .circle h3 {
-  color: #fff;
-  font-size: 2em;
-  padding: 60px 0;
-}
-
-.pricing .container .card .content {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.pricing .container .card .content .features {
-  color: #666;
-  margin-bottom: 8px;
-}
-
-.pricing .container .card .content a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  background: #000;
-  color: #fff;
-  border-radius: 40px;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.pricing .container .card:nth-child(1) .circle,
-.pricing .container .card:nth-child(1) .content a {
-  background: #ffaf00;
-}
-
-.pricing .container .card:nth-child(2) .circle,
-.pricing .container .card:nth-child(2) .content a {
-  background: #da2268;
-}
-
-.pricing .container .card:nth-child(3) .circle,
-.pricing .container .card:nth-child(3) .content a {
-  background: #bb02ff;
-}
-
-/* moving body background   */
+/* :: 17.0 Body CSS */
 
 body {
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, yellow, violet, orange, grey);
+  background: black;
   background-size: 300% 300%;
   animation: color 5s ease-in-out infinite;
 }
@@ -2700,9 +2598,9 @@ body {
 }
 
 .pagination a.active {
-  background-color: #fc6060;
+  background-color: white;
   color: white;
-  border: 1px solid #fc6060;
+  border: 1px solid white;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
@@ -2808,7 +2706,7 @@ h6 {
 }
 
 .contact-OR {
-  background-color: #fc6060;
+  background-color: white;
   width: 40px;
   height: 40px;
   display: flex;
