@@ -119,53 +119,49 @@
         </div>
     </section>
 
-    <br/>
-
-    <div class="about-us-area section-padding-80-0 clearfix">
-    
-        <!-- Trip 1 -->
-        <div class="trips-header">
-            <p><a href="#" class="expand-link">Click to expand</a></p>
-        </div>
+    <div class="trips-container bg-gray">
         
-        <!-- Content for Trip 1 -->
-        <div class="trips-content">
-            <p>This is the first expandable content section.</p>
-        </div>
+            <!-- Trip 1 -->
+            <div class="trips-header">
+                <p><a href="#" class="expand-link">Kiawah Island 2023</a></p>
+            </div>
+            
+            <!-- Content for Trip 1 -->
+            <div class="trips-content">
+                <p>This is the first expandable content section.</p>
+            </div>
 
-        <div class="trips-horizontal-line"></div>
-        
-        <!-- Trip 2 -->
-        <div class="trips-header">
-            <p><a href="#" class="expand-link">Click to expand</a></p>
-        </div>
-        
-        <!-- Content for Trip 2 -->
-        <div class="trips-content">
-            <p>This is the second expandable content section.</p>
-        </div>
+            <div class="trips-horizontal-line"></div>
+            
+            <!-- Trip 2 -->
+            <div class="trips-header">
+                <p><a href="#" class="expand-link">More trips soon!</a></p>
+            </div>
+            
+            <!-- Content for Trip 2 -->
+            <div class="trips-content">
+                <p>Coming soon! 😄</p>
+            </div>
 
-        <div class="trips-horizontal-line"></div>
+            <div class="trips-horizontal-line"></div>
 
-        <script>
-            const expandLinks = document.querySelectorAll(".expand-link");
-            const expandableContents = document.querySelectorAll(".trips-content");
+            <script>
+                const expandLinks = document.querySelectorAll(".expand-link");
+                const expandableContents = document.querySelectorAll(".trips-content");
 
-            expandLinks.forEach((link, index) => {
-                link.addEventListener("click", function (e) {
-                    e.preventDefault(); // Prevent the link from navigating
+                expandLinks.forEach((link, index) => {
+                    link.addEventListener("click", function (e) {
+                        e.preventDefault(); // Prevent the link from navigating
 
-                    // Toggle the visibility of the corresponding expandable content section
-                    if (expandableContents[index].style.display === "none" || expandableContents[index].style.display === "") {
-                        expandableContents[index].style.display = "block";
-                        link.textContent = "Click to collapse";
-                    } else {
-                        expandableContents[index].style.display = "none";
-                        link.textContent = "Click to expand";
-                    }
+                        // Toggle the visibility of the corresponding expandable content section
+                        if (expandableContents[index].style.display === "none" || expandableContents[index].style.display === "") {
+                            expandableContents[index].style.display = "block";
+                        } else {
+                            expandableContents[index].style.display = "none";
+                        }
+                    });
                 });
-            });
-        </script>
+            </script>
 
     </div>
 

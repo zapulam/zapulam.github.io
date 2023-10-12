@@ -200,17 +200,4 @@
         $.preventDefault();
     });
 
-
-    // *********************************
-    // :: 15.0 Collapsable Trips Content
-    // *********************************
-    $('#trips-content').click(function() {
-        var reducedHeight = $(this).height();
-        $(this).css('height', 'auto');
-        var fullHeight = $(this).height();
-        $(this).height(reducedHeight);
-    
-        $(this).animate({height: fullHeight}, 500);
-    });
-
 })(jQuery);

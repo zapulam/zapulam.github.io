@@ -21,11 +21,10 @@ Last Update: Feb 22, 2019
     - 09.0 Follow CSS
     - 10.0 About CSS
     - 11.0 Breadcrumb CSS
-    - 13.0 About CSS
-    - 14.0 Gallery CSS
-    - 15.0 Contact CSS
-    - 16.0 Trips CSS
-    - 17.0 Body CSS
+    - 12.0 Gallery CSS
+    - 13.0 Contact CSS
+    - 14.0 Trips CSS
+    - 15.0 Body CSS
 
 --------------------------------------------- */
 
@@ -61,27 +60,18 @@ body {
 
 ::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar
 {
-	width: 14px;
-	background-color: #F5F5F5;
+	width: 5px;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: rgb(110, 150, 225);	
-	background-image: -webkit-linear-gradient(45deg,
-	                                          rgba(255, 255, 255, .2) 25%,
-											  transparent 25%,
-											  transparent 50%,
-											  rgba(255, 255, 255, .2) 50%,
-											  rgba(255, 255, 255, .2) 75%,
-											  transparent 75%,
-											  transparent)
+	background-color: rgb(110, 150, 225);
 }
 
 h1,
@@ -1121,7 +1111,7 @@ input:required {
 }
 
 .single-instagram-item .instagram-hover-content a i {
-  color: #ffffff;
+  color: white;
   font-size: 32px;
   display: block;
   margin-bottom: 15px;
@@ -1130,7 +1120,7 @@ input:required {
 .single-instagram-item .instagram-hover-content a span {
   font-size: 14px;
   margin-bottom: 0;
-  color: #ffffff;
+  color: white;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1201,88 +1191,6 @@ input:required {
   border-radius: 10px;
 }
 
-.about-video-area .video-icon a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 99;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  background-color: white;
-  text-align: center;
-  line-height: 56px;
-  font-size: 38px;
-  border-radius: 50%;
-}
-
-.about-video-area .video-icon a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  border-radius: 50%;
-  background-color: transparent;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: 2px solid white;
-  -webkit-animation: video-icon 1200ms linear infinite;
-  animation: video-icon 1200ms linear infinite;
-  z-index: -10;
-}
-
-.about-video-area .video-icon a:hover,
-.about-video-area .video-icon a:focus {
-  background-color: #000000;
-}
-
-.about-video-area .video-icon a:hover::after,
-.about-video-area .video-icon a:focus::after {
-  border: 2px solid #000000;
-}
-
-@-webkit-keyframes video-icon {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  50% {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
-}
-
-@keyframes video-icon {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  50% {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
-}
 
 .why-choose-us-content {
   -webkit-transition-duration: 800ms;
@@ -1489,105 +1397,7 @@ input:required {
   color: #ffffff;
 }
 
-/* :: 13.0 About CSS */
-
-.team-content-area {
-  position: relative;
-  z-index: 1;
-  padding: 40px;
-  -webkit-box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  text-align: center;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  background-color: #ffffff;
-}
-
-.team-content-area .member-thumb {
-  margin: 0 auto 40px;
-  width: 165px;
-}
-
-.team-content-area .member-thumb img {
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  width: 100%;
-  border-radius: 50%;
-}
-
-.team-content-area h5 {
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-
-.team-content-area span {
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  color: white;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.team-content-area .member-social-info {
-  position: relative;
-  z-index: 1;
-  margin-top: 30px;
-}
-
-.team-content-area .member-social-info a {
-  color: #636363;
-  font-size: 16px;
-  margin: 0 10px;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-}
-
-.team-content-area .member-social-info a:hover,
-.team-content-area .member-social-info a:focus {
-  color: white;
-}
-
-.team-content-area:hover,
-.team-content-area:focus {
-  background-color: white;
-}
-
-.team-content-area:hover .member-thumb img,
-.team-content-area:focus .member-thumb img {
-  -webkit-transform: rotate(25deg);
-  -ms-transform: rotate(25deg);
-  transform: rotate(25deg);
-}
-
-.team-content-area:hover h5,
-.team-content-area:hover span,
-.team-content-area:focus h5,
-.team-content-area:focus span {
-  color: #ffffff;
-}
-
-.team-content-area:hover .member-social-info a,
-.team-content-area:focus .member-social-info a {
-  color: #ffffff;
-}
-
-.team-content-area:hover .member-social-info a:hover,
-.team-content-area:hover .member-social-info a:focus,
-.team-content-area:focus .member-social-info a:hover,
-.team-content-area:focus .member-social-info a:focus {
-  color: #000000;
-}
-
-/* :: 14.0 Gallery CSS */
+/* :: 12.0 Gallery CSS */
 
 .lx-portfolio-area {
   position: relative;
@@ -1741,7 +1551,7 @@ input:required {
   margin-top: -26px;
 }
 
-/* :: 15.0 Contact CSS */
+/* :: 13.0 Contact CSS */
 
 .lx-contact-form .form-control {
   -webkit-transition-duration: 500ms;
@@ -1968,8 +1778,14 @@ footer {
   color: #afb4bf;
 }
 
-/* :: 16.0 Trips CSS */
+/* :: 14.0 Trips CSS */
+.trips-container {
+  background-color: rgba(25, 25, 30, 1) !important
+}
+
 .trips-header {
+padding-top: 50px;
+padding-bottom: 30px;
 position: relative;
 text-align: center;
 font-family: "Poppins", sans-serif;
@@ -1983,6 +1799,8 @@ font-weight: 600;
 }
 
 .trips-content {
+  position: relative;
+  text-align: center;
   display: none;
   padding: 2px; /* adjust to taste */
   overflow: hidden    
@@ -1992,10 +1810,20 @@ font-weight: 600;
   width: 100%;
   height: 1px; /* Adjust the thickness as needed */
   background-color: rgba(110, 150, 225, 1); /* Change the color to blue */
-  margin: 20px 0; /* Adjust the margin as needed */
 }
 
-/* :: 17.0 Body CSS */
+/* Style for the arrow icon */
+.arrow {
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+/* Style for the expanded state */
+.expanded .arrow {
+  transform: rotate(90deg);
+}
+
+/* :: 15.0 Body CSS */
 
 body {
   height: 100%;
