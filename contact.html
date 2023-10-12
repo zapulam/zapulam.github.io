@@ -56,7 +56,7 @@
 
                     <nav class="classy-navbar justify-content-between" id="lxNav">
 
-                        <a class="nav-brand" href="index.html" data-aos="fade-right" data-aos-duration="3000">
+                        <a class="nav-brand" href="index.html" data-aos="fade-right" data-aos-duration="1500">
                             <h1 class="home-logo">ZacharyAaronFotos</h1>
                         </a>
 
@@ -70,11 +70,12 @@
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
 
-                            <div class="classynav" data-aos="fade-left" data-aos-duration="3000">
+                            <div class="classynav" data-aos="fade-left" data-aos-duration="1500">
                                 <ul id="nav">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="trips.html">Trips</a></li>
                                     <li class="active"><a href="contact.html">Contact</a></li>
                                 </ul>
 
@@ -90,7 +91,7 @@
     </header>
 
     
-    <ul id="social-sidebar" data-aos="fade-right" data-aos-duration="3000" style="z-index: 200">
+    <ul id="social-sidebar" data-aos="fade-right" data-aos-duration="1500" style="z-index: 200">
         <li>
             <a class="entypo-linkedin" href="https://www.linkedin.com/in/pulliamzachary"
                 target="_blank"><span>LinkedIn</span></a>
@@ -127,11 +128,11 @@
     </div>
   </section>
 
-  <div class="Query" data-aos="fade-up" data-aos-duration="3000">
+  <div class="Query" data-aos="fade-up" data-aos-duration="1500">
     <div class="left">
       <h2>
-        Have Questions?<br />
-        Send me a message now 😄
+        Questions?<br />
+        Message me 😄
       </h2>
       <div class="icons-container">
         <!-- <div class="col-12 col-md-6 col-lg-3"> -->
@@ -149,12 +150,7 @@
           </div>
         </div>
 
-        <!-- <div class="col-12 col-lg-3"> -->
-
-        <!-- <div class="contact-info mb-30"> -->
         <div class="contact-info">
-          <!-- <p>Visit Us</p> -->
-
           <div class="social-info">
             <div class="icons">
               <a href="https://www.instagram.com/zacharyaaronfotos">
@@ -164,12 +160,11 @@
             </div>
           </div>
         </div>
-        <!-- <div class="contact-info mb-30"> -->
+        
         <div class="contact-info">
-          <!-- <p>Call Us</p> -->
           <div class="social-info">
             <div class="icons">
-              <a href="https://t.me/LxChatGroup">
+              <a href="https://mail.google.com/mail/u/0/#inbox">
                 <img src="img/email.png" target="_blank" max-width="2%" />
                 <p style="color: white; font-weight: bold;">Email</p>
               </a>
@@ -179,12 +174,14 @@
 
       </div>
     </div>
-    <div class="center">
-    </div>
-    <div class="right">
 
+    <div class="center"></div>
+
+    <div class="right">
       <form action="#">
+
         <h3 class="contact-heading">Get in touch</h3>
+
         <div class="form-floating my-3">
           <input type="text" style="
                   background-color: linear-gradient(
@@ -196,20 +193,26 @@
                 " id="first_name" class="form-control" placeholder="First name" aria-label="First name" />
           <label for="first_name">First name</label>
         </div>
+
         <div class="form-floating my-3">
           <input type="email" class="form-control" id="lastName" placeholder="Last name" aria-label="Last name" />
           <label for="lastName">Last name</label>
         </div>
+
         <div class="form-floating my-3">
           <input type="email" class="form-control" id="floatingInput" placeholder="Email address" />
           <label for="floatingInput">Email address</label>
         </div>
+
         <div class="form-floating my-3">
           <textarea class="form-control" placeholder="Comments" id="floatingTextarea2" rows="3"></textarea>
           <label for="floatingTextarea2">Comments</label>
         </div>
-        <br />
+
+        <br/>
+
         <button type="button" class="btn">Submit</button>
+
       </form>
     </div>
   </div>
@@ -217,7 +220,7 @@
   <hr style="margin-left: 50px; margin-right: 50px" />
   <br /><br />
 
-  <section class="follow-area clearfix" data-aos="fade-right" data-aos-duration="3000">
+  <section class="follow-area clearfix" data-aos="fade-right" data-aos-duration="1500">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -296,7 +299,7 @@
 </section>
 
   <footer>
-      <div class="wrapper" data-aos="fade-up" data-aos-duration="3000">
+      <div class="wrapper" data-aos="fade-up" data-aos-duration="1500">
           <div class="containerUp">
               <div class="social-info">
                   <h2>Follow Zachary</h2>
@@ -316,10 +319,9 @@
 
           <div class="containerDown">
               <div class="last">
-                <div class="head" style="color: #636363;">Total Website Visits: <span id="visit-count">0</span></div>
+                <div class="head" style="color: gray;">Total Website Visits: <span id="visit-count">0</span></div>
               </div>
-              <p>Made by <a
-                      href="https://github.com/zapulam" target="_blank"> Zachary 😄</a></p>
+              <p>Made by <a href="https://github.com/zapulam" target="_blank"> Zachary 😄</a></p>
           </div>
       </div>
       </div>
@@ -327,44 +329,30 @@
 </body>
 
 <script>
-  // Function to read or initialize the visit count from cookies or local storage
-  function getVisitCount() {
-      let visitCount = localStorage.getItem('visitCount');
-      if (!visitCount) {
-          visitCount = 0;
-      }
-      return parseInt(visitCount);
+  function updateCounter() {
+      fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
+          .then(res => res.json())
+          .then(data => counterElement.innerHTML = data.value)
   }
-
-  // Function to update and display the visit count
-  function updateVisitCount() {
-      const visitCountElement = document.getElementById('visit-count');
-      const currentCount = getVisitCount() + 1;
-      localStorage.setItem('visitCount', currentCount);
-      visitCountElement.textContent = currentCount;
-  }
-
-  // Call the updateVisitCount function to increment the visit count
-  updateVisitCount();
+  updateCounter()
+  counterElement = document.getElementsByClassName('count')[0];
 </script>
 
 
 <script src="js/jquery.min.js"></script>
 
 <script src="js/popper.min.js%2bbootstrap.min.js.pagespeed.jc.9S4FA15Zn6.js"></script>
-<script>
-  eval(mod_pagespeed_2mSwO3vn68);
-</script>
 
-<script>
-  eval(mod_pagespeed_aQrG1NKKxL);
-</script>
+<script>eval(mod_pagespeed_2mSwO3vn68);</script>
 
-<script src="js/lx.bundle.js"></script>
+<script>eval(mod_pagespeed_aQrG1NKKxL);</script>
+
+<script src="js/bundle.js"></script>
 
 <script src="js/default-assets/active.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -375,15 +363,12 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
+
 <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
   data-cf-beacon='{"rayId":"699023133d611baa","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.9.0","si":100}'></script>
-<!-- animate on scroll js  -->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-</body>
 
-
+<script>AOS.init();</script>
 
 </html>

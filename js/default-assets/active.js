@@ -6,7 +6,6 @@
     // ****************************
     // :: 1.0 Preloader Active Code
     // ****************************
-
     lx_window.on('load', function () {
         $('#preloader').fadeOut('1000', function () {
             $(this).remove();
@@ -16,7 +15,6 @@
     // ****************************
     // :: 2.0 ClassyNav Active Code
     // ****************************
-
     if ($.fn.classyNav) {
         $('#lxNav').classyNav();
     }
@@ -24,7 +22,6 @@
     // *********************************
     // :: 3.0 Welcome Slides Active Code
     // *********************************
-
     if ($.fn.owlCarousel) {
         var welcomeSlider = $('.welcome-slides');
         welcomeSlider.owlCarousel({
@@ -67,7 +64,6 @@
     // ************************************
     // :: 4.0 Instragram Slides Active Code
     // ************************************
-
     if ($.fn.owlCarousel) {
         var instagramFeedSlider = $('.instragram-feed-area');
         instagramFeedSlider.owlCarousel({
@@ -99,7 +95,6 @@
     // *********************************
     // :: 5.0 Masonary Gallery Active Code
     // *********************************
-
     if ($.fn.imagesLoaded) {
         $('.lx-portfolio').imagesLoaded(function () {
             // filter items on button click
@@ -123,7 +118,6 @@
     // ***********************************
     // :: 6.0 Portfolio Button Active Code
     // ***********************************
-    
     $('.portfolio-menu button.btn').on('click', function () {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
@@ -139,7 +133,6 @@
     // ************************
     // :: 8.0 Stick Active Code
     // ************************
-
     lx_window.on('scroll', function () {
         if (lx_window.scrollTop() > 0) {
             $('.main-header-area').addClass('sticky');
