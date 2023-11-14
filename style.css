@@ -22,13 +22,14 @@ Last Update: Feb 22, 2019
     - 10.0 About CSS
     - 11.0 Breadcrumb CSS
     - 12.0 Gallery CSS
-    - 13.0 Contact CSS
-    - 14.0 Trips CSS
-    - 15.0 Body CSS
+    - 13.0 Trips CSS
+    - 14.0 Body CSS
 
 --------------------------------------------- */
 
 /* Import Fonts & All CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
 @import url(https://weloveiconfonts.com/api/?family=entypo);
@@ -40,10 +41,11 @@ Last Update: Feb 22, 2019
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/default-assets/themify-icons.css);
-@import url(css/style.css);
 
 
 /* :: 01.0 Reboot CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 * {
   margin: 0;
@@ -65,7 +67,7 @@ body {
 
 ::-webkit-scrollbar
 {
-	width: 5px;
+	width: 15px;
 	background-color: transparent;
 }
 
@@ -248,14 +250,14 @@ ul li {
 .mfp-iframe-holder .mfp-close {
   position: fixed;
   z-index: 100;
-  color: #ffffff;
+  color: white;
   right: 20px;
   text-align: center;
   padding-right: 0;
   width: 100%;
   top: 20px;
   width: 30px;
-  background: white;
+  background: red;
   height: 30px;
   line-height: 30px;
 }
@@ -265,8 +267,7 @@ img.mfp-img {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
 }
 
-button.mfp-close,
-button.mfp-arrow {
+button.mfp-close {
   background: white;
 }
 
@@ -302,23 +303,9 @@ input:required {
   border-color: #ebebeb;
 }
 
-.mfp-arrow-left::after {
-  border-right-color: transparent;
-}
-
-.mfp-arrow-left::before {
-  border-right-color: #ffffff;
-}
-
-.mfp-arrow-right::after {
-  border-left-color: transparent;
-}
-
-.mfp-arrow-right::before {
-  border-left-color: #ffffff;
-}
-
 /* :: 02.0 Spacing CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .mt-15 {
   margin-top: 15px;
@@ -459,7 +446,9 @@ input:required {
   padding-bottom: 0;
 }
 
-/* :: 3.0 Preloader CSS */
+/* :: 03.0 Preloader CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 #preloader {
   position: fixed;
@@ -544,7 +533,9 @@ input:required {
   }
 }
 
-/* :: 4.0 Heading CSS */
+/* :: 04.0 Heading CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .section-heading {
   position: relative;
@@ -575,7 +566,9 @@ input:required {
   color: #ffffff;
 }
 
-/* :: 5.0 Backtotop CSS */
+/* :: 05.0 Backtotop CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 #scrollUp {
   position: fixed;
@@ -610,7 +603,9 @@ input:required {
   color: black;
 }
 
-/* :: 6.0 Buttons CSS */
+/* :: 06.0 Buttons CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .btn:focus {
   box-shadow: none;
@@ -670,7 +665,9 @@ input:required {
   font-weight: 500;
 }
 
-/* :: 7.0 Header CSS */
+/* :: 07.0 Header CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .home-logo {
   color: white;
@@ -942,7 +939,9 @@ input:required {
   background-color: #ffffff;
 }
 
-/* :: 8.0 Hero CSS */
+/* :: 08.0 Hero CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .welcome-area {
   position: center;
@@ -1021,7 +1020,7 @@ input:required {
   position: center;
   z-index: 2;
   width: 100%;
-  height: 800px;
+  height: 900px;
   background-color: white;
 }
 
@@ -1072,7 +1071,9 @@ input:required {
   display: block;
 }
 
-/* :: 9.0 Follow CSS */
+/* :: 09.0 Follow CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .single-instagram-item {
   position: relative;
@@ -1158,6 +1159,8 @@ input:required {
 }
 
 /* :: 10.0 About CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .about-us-content h3 {
   font-size: 36px;
@@ -1262,6 +1265,8 @@ input:required {
 }
 
 /* :: 11.0 Breadcrumb CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .breadcrumb-area {
   position: relative;
@@ -1398,6 +1403,9 @@ input:required {
 }
 
 /* :: 12.0 Gallery CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
 
 .lx-portfolio-area {
   position: relative;
@@ -1552,6 +1560,8 @@ input:required {
 }
 
 /* :: 13.0 Contact CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .lx-contact-form .form-control {
   -webkit-transition-duration: 500ms;
@@ -1779,6 +1789,9 @@ footer {
 }
 
 /* :: 14.0 Trips CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
 .trips-container {
   background-color: rgba(25, 25, 30, 1) !important
 }
@@ -1794,36 +1807,9 @@ line-height: 1.3;
 font-weight: 600;
 }
 
-.expand-link {
-  color: white;
-}
-
-.trips-content {
-  position: relative;
-  text-align: center;
-  display: none;
-  padding: 2px; /* adjust to taste */
-  overflow: hidden    
-}
-
-.trips-horizontal-line {
-  width: 100%;
-  height: 1px; /* Adjust the thickness as needed */
-  background-color: rgba(110, 150, 225, 1); /* Change the color to blue */
-}
-
-/* Style for the arrow icon */
-.arrow {
-  transition: transform 0.3s;
-  display: inline-block;
-}
-
-/* Style for the expanded state */
-.expanded .arrow {
-  transform: rotate(90deg);
-}
-
-/* :: 15.0 Body CSS */
+/* :: 14.0 Body CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 body {
   height: 100%;
