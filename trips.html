@@ -82,23 +82,6 @@
             </div>
         </div>
     </header>
-    
-    <ul id="social-sidebar" data-aos="fade-right" data-aos-duration="1500" style="z-index: 200">
-        <li>
-            <a class="entypo-linkedin" href="https://www.linkedin.com/in/pulliamzachary"
-                target="_blank"><span>LinkedIn</span>
-            </a>
-        </li>
-
-        <li>
-            <a class="entypo-instagrem" href="https://www.instagram.com/zacharyaaronfotos"
-                target="_blank"><span>Instagram</span></a>
-        </li>
-
-        <li>
-            <a class="entypo-github" href="https://github.com/zapulam" target="_blank"><span>Github</span></a>
-        </li>
-    </ul>
 
     <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/background/1.jpg);">
         <div class="container h-100">
@@ -119,51 +102,53 @@
         </div>
     </section>
 
-    <div class="trips-container bg-gray">
-        
-            <!-- Trip 1 -->
-            <div class="trips-header">
-                <p><a href="#" class="expand-link">Kiawah Island 2023</a></p>
+    <div class="trips-container bg-gray section-padding-80-0 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Some of my recent trips...</h2>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Content for Trip 1 -->
-            <div class="trips-content">
-                <p>This is the first expandable content section.</p>
+            <div class="row">
+                
+                <!-- Trip 1 -->
+                <a href="trips/kiawah_2023.html" class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-1" aria-hidden="true"></i>
+                        </div>
+                        <h4>Kiawah Island 2023</h4>
+                    </div>
+                </a>
+                    
+                <!-- Trip 2 -->
+                <a href="trips/roan_2023.html" class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-2" aria-hidden="true"></i>
+                        </div>
+                        <h4>Roan Mountain 2023</h4>
+                    </div>
+                </a>
+
+                <!-- Trip 3 -->
+                <a class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-3" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+
             </div>
-
-            <div class="trips-horizontal-line"></div>
-            
-            <!-- Trip 2 -->
-            <div class="trips-header">
-                <p><a href="#" class="expand-link">More trips soon!</a></p>
-            </div>
-            
-            <!-- Content for Trip 2 -->
-            <div class="trips-content">
-                <p>Coming soon! 😄</p>
-            </div>
-
-            <div class="trips-horizontal-line"></div>
-
-            <script>
-                const expandLinks = document.querySelectorAll(".expand-link");
-                const expandableContents = document.querySelectorAll(".trips-content");
-
-                expandLinks.forEach((link, index) => {
-                    link.addEventListener("click", function (e) {
-                        e.preventDefault(); // Prevent the link from navigating
-
-                        // Toggle the visibility of the corresponding expandable content section
-                        if (expandableContents[index].style.display === "none" || expandableContents[index].style.display === "") {
-                            expandableContents[index].style.display = "block";
-                        } else {
-                            expandableContents[index].style.display = "none";
-                        }
-                    });
-                });
-            </script>
-
+        </div>
     </div>
+
+    <hr style="margin-left: 50px; margin-right: 50px" />
+    <br /><br />
 
     <section class="follow-area clearfix" data-aos="fade-right" data-aos-duration="1500">
         <div class="container">
