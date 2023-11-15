@@ -58,6 +58,7 @@ button.mfp-close {
 .mfp-close-btn-in .mfp-close {
   background-color: black;
   color: black; 
+  position: absolute;
   border-top-width: 21px;
   border-bottom-width: 21px;
   border-left-width: 21px;}
@@ -67,7 +68,8 @@ button.mfp-close {
 img.mfp-img {
   width: auto;
   max-width: 100%;
-  height: auto;
+  position: absolute;
+  height: 100%;
   display: block;
   line-height: 0;
   box-sizing: border-box;

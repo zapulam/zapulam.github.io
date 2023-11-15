@@ -92,84 +92,6 @@ h6 {
   font-family: "entypo", sans-serif;
 }
 
-#social-sidebar {
-  left: 0;
-  position: fixed;
-  top: 30%;
-  z-index: 2;
-}
-
-#social-sidebar li:first-child a {
-  border-top-right-radius: 5px;
-}
-
-#social-sidebar li:last-child a {
-  border-bottom-right-radius: 5px;
-}
-
-#social-sidebar a {
-  background: rgba(110, 150, 225, 0.8);
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  height: 50px;
-  width: 50px;
-  font-size: 24px;
-  line-height: 50px;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-
-#social-sidebar a:hover span {
-  left: 120%;
-  opacity: 1;
-}
-
-#social-sidebar a span {
-  font: 12px "Poppins", sans-serif;
-  text-transform: uppercase;
-  border-radius: 3px;
-  line-height: 24px;
-  left: -100%;
-  margin-top: -16px;
-  opacity: 0;
-  padding: 4px 8px;
-  position: absolute;
-  transition: opacity 0.3s, left 0.4s;
-  top: 50%;
-  z-index: -1;
-}
-
-#social-sidebar a span:before {
-  display: block;
-  height: 8px;
-  width: 8px;
-  left: -4px;
-  margin-top: -4px;
-  position: absolute;
-  top: 50%;
-  transform: rotate(45deg);
-}
-
-#social-sidebar a[class*="instagrem"]:hover,
-#social-sidebar a[class*="instagrem"] span,
-#social-sidebar a[class*="instagrem"] span:before {
-  background: #ea4c89;
-}
-
-#social-sidebar a[class*="linkedin"]:hover,
-#social-sidebar a[class*="linkedin"] span,
-#social-sidebar a[class*="linkedin"] span:before {
-  background: #0a416e;
-}
-
-#social-sidebar a[class*="github"]:hover,
-#social-sidebar a[class*="github"] span,
-#social-sidebar a[class*="github"] span:before {
-  background: #9c7a5b;
-}
-
 a,
 a:active,
 a:focus,
@@ -265,18 +187,6 @@ ul li {
 img.mfp-img {
   -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-}
-
-button.mfp-close {
-  background: white;
-}
-
-.mfp-bottom-bar {
-  display: none !important;
-}
-
-.mfp-bg {
-  background-color: #000000;
 }
 
 .bg-transparent {
@@ -450,6 +360,7 @@ input:required {
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 
+/*
 #preloader {
   position: fixed;
   width: 100%;
@@ -532,6 +443,7 @@ input:required {
     box-shadow: 0 2.5em 0 0;
   }
 }
+*/
 
 /* :: 04.0 Heading CSS */
 /* ---------------------------------------------------------------------------------------------------- */
