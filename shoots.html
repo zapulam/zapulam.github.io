@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="../img/core-img/logo.png">
+    <link rel="icon" href="img/core-img/logo.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
     <header class="header-area">
         <div class="main-header-area">
@@ -40,11 +43,11 @@
 
                             <div class="classynav" data-aos="fade-left" data-aos-duration="1500">
                                 <ul id="nav">
-                                    <li><a href="../index.html">Home</a></li>
-                                    <li><a href="../about.html">About</a></li>
-                                    <li><a href="../gallery.html">Gallery</a></li>
-                                    <li><a href="../shoots.html">Shoots</a></li>
-                                    <li><a href="../trips.html">Trips</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li class="active"><a href="shoots.html">Shoots</a></li>
+                                    <li><a href="trips.html">Trips</a></li>
                                 </ul>
 
                             </div>
@@ -55,12 +58,19 @@
         </div>
     </header>
 
-    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(../img/trips/kiawah_2023/4.jpg);">
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/51.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">Kiawah Island 2023</h2>
+                        <h2 class="page-title">Shoots</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Shoots</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -71,55 +81,89 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                </div>
-            </div>
-            <div class="row lx-portfolio">
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item outdoors mb-30 wow fadeInUp"
-                    data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="../img/trips/kiawah_2023/0.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="../img/trips/kiawah_2023/0.jpg" class="portfolio-img">+</a>
-                        </div>
+                    <div class="portfolio-menu text-center">
+                        <h2>Some of my recent photoshoots, click to view each gallery...</h2>
                     </div>
                 </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item outdoors mb-30 wow fadeInUp"
-                    data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="../img/trips/kiawah_2023/1.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="../img/trips/kiawah_2023/1.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item cars mb-30 wow fadeInUp"
-                    data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="../img/trips/kiawah_2023/2.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="../img/trips/kiawah_2023/2.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item people mb-30 wow fadeInUp"
-                    data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="../img/trips/kiawah_2023/3.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="../img/trips/kiawah_2023/3.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 
+    <div class="shoots-container bg-gray section-padding-80-0 clearfix">
+        <div class="container">
+
+            <div class="row">
+                
+                <!-- Shoot 1 -->
+                <a href="" class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-1" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+                    
+                <!-- Shoot 2 -->
+                <a href="" class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-2" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+
+                <!-- Shoot 3 -->
+                <a class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-3" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="row">
+                
+                <!-- Shoot 4 -->
+                <a class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-4" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+                    
+                <!-- Shoot 5 -->
+                <a class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-5" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+
+                <!-- Shoot 6 -->
+                <a class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa-solid fa-6" aria-hidden="true"></i>
+                        </div>
+                        <h4>More coming soon!</h4>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
     <hr style="margin-left: 50px; margin-right: 50px" />
+    <br /><br />
 
     <section class="follow-area clearfix" data-aos="fade-right" data-aos-duration="1500">
         <div class="container">
@@ -137,7 +181,7 @@
         <div class="instragram-feed-area owl-carousel">
 
             <div class="single-instagram-item">
-                <img src="../img/bg-img/30.jpg" alt="">
+                <img src="img/bg-img/30.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -147,7 +191,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="../img/bg-img/7.jpg" alt="">
+                <img src="img/bg-img/7.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -157,7 +201,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="../img/bg-img/63.jpg" alt="">
+                <img src="img/bg-img/63.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -168,7 +212,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="../img/bg-img/61.jpg" alt="">
+                <img src="img/bg-img/61.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -178,7 +222,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="../img/bg-img/97.jpg" alt="">
+                <img src="img/bg-img/97.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -188,7 +232,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="../img/bg-img/51.jpg" alt="">
+                <img src="img/bg-img/51.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -198,7 +242,7 @@
             </div>
 
             <div class="single-instagram-item">
-                <img src="../img/trips/roan_2023/5.jpg" alt="">
+                <img src="img/trips/roan_2023/5.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/zacharyaaronfotos/" style="font-size: 18px;">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -206,7 +250,7 @@
                     </a>
                 </div>
             </div>
-
+            
         </div>
     </section>
 
@@ -219,11 +263,11 @@
                     <div class="icons">
 
                         <a href="https://www.linkedin.com/in/zapulam/" target="_blank"><img
-                                src="../img/footer-icons/linkedin.png"></a>
+                                src="./img/footer-icons/linkedin.png"></a>
                         <a href="https://www.instagram.com/zacharyaaronfotos" target="_blank"><img
-                                src="../img/footer-icons/insta.jpg"></a>
+                                src="./img/footer-icons/insta.jpg"></a>
                         <a href="https://github.com/zapulam" target="_blank"><img
-                                src="../img/footer-icons/gtihub.png"></a>
+                                src="./img/footer-icons/gtihub.png"></a>
 
                     </div>
                 </div>
@@ -250,17 +294,17 @@
 </script>
 
 
-<script src="../js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 
-<script src="../js/popper.min.js%2bbootstrap.min.js.pagespeed.jc.9S4FA15Zn6.js"></script>
+<script src="js/popper.min.js%2bbootstrap.min.js.pagespeed.jc.9S4FA15Zn6.js"></script>
 
 <script>eval(mod_pagespeed_2mSwO3vn68);</script>
 
 <script>eval(mod_pagespeed_aQrG1NKKxL);</script>
 
-<script src="../js/bundle.js"></script>
+<script src="js/bundle.js"></script>
 
-<script src="../js/default-assets/active.js"></script>
+<script src="js/default-assets/active.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 
