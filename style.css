@@ -166,8 +166,7 @@ ul li {
   z-index: -1;
 }
 
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
+.mfp-image-holder .mfp-close {
   position: fixed;
   z-index: 100;
   color: white;
@@ -182,10 +181,6 @@ ul li {
   line-height: 30px;
 }
 
-img.mfp-img {
-  -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-}
 
 .bg-transparent {
   background-color: transparent !important;
