@@ -925,25 +925,31 @@ input:required {
   position: center;
   z-index: 2;
   width: 100%;
-  height: 650px;
+  height: 900px;
   background-color: white;
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+  .single-welcome-slide {
+    height: 750px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-welcome-slide {
-    height: 650px;
+    height: 700px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-welcome-slide {
-    height: 650px;
+    height: 675px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .single-welcome-slide {
-    height: 500px;
+    height: 600px;
   }
 }
 
@@ -954,31 +960,77 @@ input:required {
 
 .single-welcome-slide .welcome-text h2 {
   font-weight: 700;
+  position: center;
   text-align: center;
-  font-size: 6.8vw;
-  display: block;
+  font-size: 92px;
   margin-bottom: 0;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(90, 130, 225, 1));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(110, 150, 225, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.single-welcome-slide  .welcome-text p {
-  font-size: 1.5vw;
-  text-align: center;
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 82px;
+    position: center;
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 100px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 62px;
+    position: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 52px;
+    position: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .single-welcome-slide .welcome-text h2 {
     font-size: 42px;
+    position: center;
     text-align: center;
   }
 }
 
 .single-welcome-slide .welcome-text p {
   color: white;
+  font-size: 20px;
   margin-bottom: 50px;
   display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+  .single-welcome-slide .welcome-text p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-welcome-slide .welcome-text p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide .welcome-text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text p {
+    font-size: 15px;
+  }
 }
 
 /* :: 09.0 Follow CSS */
@@ -1181,7 +1233,7 @@ input:required {
 .breadcrumb-area {
   position: relative;
   z-index: 1;
-  height: 300px;
+  height: 370px;
 }
 
 @media only screen and (max-width: 767px) {
