@@ -848,6 +848,11 @@ input:required {
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 
+.sig {
+  width: 50%;
+  min-width: 350px;
+}
+
 .welcome-area {
   position: center;
   z-index: 10;
@@ -960,7 +965,8 @@ input:required {
 }
 
 .single-welcome-slide .welcome-text {
-  position: center;
+  display: flex;
+  justify-content: center;
   z-index: 1;
 }
 
