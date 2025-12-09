@@ -87,7 +87,7 @@ img {
   min-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 0 7vw;
+  padding: 0 4vw;
   background-image: url("img/headers/0.jpg");
   background-size: cover;
   background-position: center;
@@ -111,11 +111,12 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(180px, 260px) minmax(260px, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
   align-items: center;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 48px 0;
+  margin: 0 auto;
 }
 
 .hero-logo-wrap {
@@ -222,9 +223,7 @@ h1 {
 .site-footer {
   padding: 48px 7vw 56px;
   text-align: center;
-  border-top: 1px solid var(--border);
   background: var(--panel);
-  margin-top: 32px;
 }
 
 .site-footer p {
@@ -305,7 +304,7 @@ h1 {
 }
 
 .carousel-section {
-  padding: 0;
+  padding: 50px 0px;
   margin: 0;
   width: 100%;
   max-width: 100%;
@@ -375,17 +374,19 @@ h1 {
     padding: 40px 6vw;
   }
 
-  .hero-content {
-    grid-template-columns: 1fr;
-    padding: 32px 0;
-  }
-
   .gallery {
     padding: 72px 6vw;
   }
 
   .carousel {
     gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
   }
 }
 
