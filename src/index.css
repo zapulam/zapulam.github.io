@@ -88,7 +88,7 @@ img {
   display: flex;
   align-items: center;
   padding: 0 4vw;
-  background-image: url("img/headers/0.jpg");
+  background-image: url("/img/headers/0.jpg");
   background-size: cover;
   background-position: center;
   isolation: isolate;
