@@ -1,5 +1,26 @@
+# Python
 venv/
+
+# Dependencies & build output
 node_modules/
 dist/
+
+# Environment / local overrides
+.env
+.env.*
+!.env.example
 *.local
+
+# Logs & debug
+*.log
+npm-debug.log*
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+
+# TypeScript incremental (if emitted outside node_modules)
+*.tsbuildinfo
